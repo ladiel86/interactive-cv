@@ -1,5 +1,29 @@
 var selectedTools = [];
 
+document.getElementById("filtersButton").addEventListener("click", event => {
+    let filter = document.getElementById("filter");
+    let shift = filter.getAttribute("isHidden") == "true" ? 20 : 0;
+    document.getElementById("filtersButton").style = "left: " + shift + "vw; transform: rotate(-90deg); transition: transform 1s, left 1s;";
+    document.getElementById("experienceContent").style = "width: " + (100 - shift) + "vw; transform: translateX(" + shift +
+    "vw); transition: transform 1s, width 1s;";
+    document.getElementById("filter").style = "left: " + (shift - 20) + "vw; transition: left 1s;";
+    console.log(shift === 20);
+    (shift === 20) ? filter.setAttribute("isHidden", "false") : filter.setAttribute("isHidden", "true");
+})
+
+let includes = document.getElementsByTagName('include');
+for(var i=0; i<includes.length; i++){
+    let include = includes[i];
+    load_file(includes[i].attributes.src.value, function(text){
+        include.insertAdjacentHTML('afterend', text);
+        include.remove();
+    });
+}
+
+function load_file(filename, callback) {
+    fetch(filename).then(response => response.text()).then(text => callback(text));
+}
+
 function highlightElements(toolName) {
     var selectedElement = document.getElementsByClassName('tool ' + toolName)[0];
     if(selectedElement.getAttribute('data-selected') == 'true') {

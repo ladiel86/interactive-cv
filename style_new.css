@@ -1,0 +1,394 @@
+@font-face {
+    font-family: inter;
+    src: url(./fonts/inter/Inter-Regular.woff);
+  }
+
+@font-face {
+    font-family: inter-bold;
+    src: url(./fonts/inter/Inter-Bold.woff);
+}
+
+@font-face {
+    font-family: inter-semi-bold;
+    src: url(./fonts/inter/Inter-SemiBold.woff);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: inter;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    max-height: 100%;
+}
+
+body#main {
+    background-color: #E3F2F9;
+}
+
+body#image {
+    background-image: url("./img/typewriter2.jpg");
+    background-size: cover;
+    background-position-x: right;
+}
+
+body.experience {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#experienceContent::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+
+#experienceContent::-webkit-scrollbar-thumb {
+    background: #658B9D;
+}
+
+#experienceContent::-webkit-scrollbar-thumb:hover {
+    background: #023047;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+    background-color: #023047;
+    color: #E3F2F9;
+    height: 75px;
+    min-height: 75px;
+    width: 100%;
+}
+
+.headerItem {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    text-align: center;
+    font-size: 18pt;
+    font-family: inter-semi-bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.headerItem:last-of-type {
+    margin-left: auto;
+}
+
+.content {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+object {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #023047;
+    margin: auto;
+    left: -20vw;
+    width: 20vw;
+    height: 100%;
+}
+
+#experienceContent {
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+}
+
+#filtersButton {
+    position: absolute;
+    color: #E3F2F9;
+    background-color: #023047;
+    border: 5px solid #023047;
+    margin-left: -5px;
+    padding: 10px;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    left: 0vw;
+    top: 100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.tools {
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    min-width: 130px;
+}
+
+.toolsTitle {
+    color: #E3F2F9;
+    font-size: 12pt;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #023047;
+    letter-spacing: .25px;
+    line-height: 2;
+    text-align: left;
+    margin: 0 auto;
+}
+
+p.center {
+    text-align: center;
+    font-size: 30pt;
+}
+
+p.contact {
+    font-size: 24pt;
+}
+
+i.logo {
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+a {
+    color: #023047;
+    letter-spacing: normal;
+    transition: letter-spacing 2s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    letter-spacing: 2px;
+    transition: letter-spacing 1s;
+}
+
+#clock {
+    display: flex;
+    justify-content: space-between;
+    color: #023047;
+}
+
+.clockItem {
+    width: 100px;
+    text-align: center;
+}
+
+.clockNumber {
+    font-size: 30pt;
+}
+
+b {
+    color: #023047;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.tool {
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+    letter-spacing: -1px;
+    flex-grow: 1;
+}
+
+.tool[data-selected=false] {
+    
+    background-color: #E3F2F9;
+}
+
+.tool[data-selected=true] {
+    background-color: #658B9D;
+}
+
+.tool p {
+    font-size: 8pt;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tool p[data-selected=false] {
+    color: #023047;
+}
+
+.tool p[data-selected=true] {
+    color: #ffffff;
+}
+
+span.material-symbols-outlined {
+    font-size: 10pt;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+span.material-symbols-outlined[data-selected=false] {
+    display: none;
+}
+
+span.material-symbols-outlined[data-selected=true] {
+    display: inline;
+}
+
+.section {
+    margin: 40px auto;
+    justify-content: center;
+    width: 90%;
+}
+
+.jobSection {
+    margin: 40px auto 40px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(72, 106, 162, 0.1);
+    border-radius: 10px;
+    visibility: visible;
+    max-width: 1250px;
+}
+
+.jobTitle {
+    color: rgb(75, 93, 121);
+    margin: 0;
+    letter-spacing: -0.5px;
+    font-size: 12pt;
+    font-weight: 700;
+    width: 250px;    
+}
+
+.date {
+    font-size: 10pt;
+}
+
+.jobDescription {
+    margin: 0;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    letter-spacing: .25px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+li {
+    margin: 0 auto 15px;
+    color: #023047;
+}
+
+li ul li:first-child {
+    margin-top: 15px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto 20px;
+    letter-spacing: 5px;
+    font-size: 20pt;
+    font-weight: 700;
+    color: rgb(75, 93, 121);
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);    
+}
+
+.popup {
+    background-color: #fffff0;
+    color: #647C90;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tool:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.tile:hover p.jobTitle, .tile:hover p.employee {
+    opacity: 0.3;
+}
+
+.tile:hover {
+    background-color: #647C90;
+    cursor: pointer;
+}
+  
+.tile:hover .middle {
+    opacity: 1;
+}
+
+@media screen and (max-height: 700px) {
+    .toolsTitle {
+        font-size: 10pt;
+    }
+
+    .tool {
+        padding: 2px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    #filter, #filtersButton {
+        display: none;
+    }
+
+    #experienceContent {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    p.center {
+        font-size: 24pt;
+    }
+
+    p.contact {
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #filter, #filtersButton {
+        display: none;
+    }
+
+    #experienceContent {
+        width: 100vw;
+    }
+}
