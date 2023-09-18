@@ -188,6 +188,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     color: #023047;
+    visibility: hidden;
 }
 
 .clockItem {
