@@ -164,6 +164,36 @@ p.contact {
     font-size: 24pt;
 }
 
+p.sample {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 20px 0px;
+}
+
+p.note {
+    text-align: justify;
+    line-height: 1.5;
+    border: rgba(2, 48, 71, 1) 1px solid;
+    background-color: rgba(2, 48, 71, 0.25);
+    padding: 20pt;
+    margin: 0 20px 0;
+}
+
+p.important {
+    text-align: justify;
+    line-height: 1.5;
+    border: rgba(187, 80, 2, 1) 1px solid;
+    background-color: rgba(187, 80, 2, 0.25);
+    padding: 20pt;
+    margin: 0 20px 0;
+}
+
+p.or {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
 i.logo {
     font-size: inherit;
     vertical-align: middle;
@@ -184,26 +214,19 @@ a:hover {
     transition: letter-spacing 1s;
 }
 
-#clock {
-    display: flex;
-    justify-content: space-between;
-    color: #023047;
-    visibility: hidden;
-}
-
-.clockItem {
-    width: 100px;
-    text-align: center;
-}
-
-.clockNumber {
-    font-size: 30pt;
-}
-
 b {
     color: #023047;
     font-weight: 700;
     letter-spacing: 0.5px;
+}
+
+code {
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: #C7DAE3;
+    padding: 3px;
+    border: #023047 1px solid;
+    border-radius: 5px;
 }
 
 .tool {
@@ -278,13 +301,17 @@ span.material-symbols-outlined[data-selected=true] {
     width: 250px;    
 }
 
-.date {
-    font-size: 10pt;
-}
-
 .jobDescription {
     margin: 0;
     width: 100%;
+}
+
+div.sample-text {
+    margin: 20px 20%;
+    background-color: rgba(72, 106, 162, 0.1);
+    border: rgba(72, 106, 162, 0.5) 1px solid;
+    padding: 50px;
+    border-radius: 10px;
 }
 
 ul {
@@ -314,6 +341,22 @@ h1 {
     font-size: 20pt;
     font-weight: 700;
     color: rgb(75, 93, 121);
+}
+
+h1.sample {
+    font-size: 30pt;
+}
+
+h2 {
+    margin: 20px auto 20px;
+    letter-spacing: 3px;
+    font-size: 16pt;
+    font-weight: 700;
+    color: rgb(75, 93, 121);
+}
+
+h2.sample {
+    font-size: 20pt;
 }
 
 .middle {

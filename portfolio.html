@@ -5,27 +5,90 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
-        <div style="margin: auto">
-            <p class="center" style="font-style: italic;">Comming Soon!</p>
-            <div id="clock">
-                <div class="clockItem">
-                    <div id="days" class="clockNumber"></div>
-                    <div class="clockItemText">DAYS</div>
-                </div>
-                <div class="clockItem">
-                    <div id="hours" class="clockNumber"></div>
-                    <div class="clockItemText">HOURS</div>
-                </div>
-                <div class="clockItem">
-                    <div id="minutes" class="clockNumber"></div>
-                    <div class="clockItemText">MINUTES</div>
-                </div>
-                <div class="clockItem">
-                    <div id="seconds" class="clockNumber"></div>
-                    <div class="clockItemText">SECONDS</div>
-                </div>
-            </div>
+        <div class="sample-text">
+            <h1 class="sample">Snippets in MadCap Flare</h1>
+            <p class="sample">A snippet (file with .flsnp extension) is a piece of content that can be used repeatedly in multiple HTM files. 
+                Its content can be formatted the same way as any other HTM file and it can contain any type of HTML element (text, images, tables).</p>
+            <p class="sample">By using snippets, you have the possibility to change the content in one place. Each HTM file using this snippet 
+                will have the same content automatically. This makes your documentation easier to update and avoid having outdated information.</p>
+            <p class="note"><b>NOTE: </b>The content of a snippet file is the same as in an HTM file. However, when inserting a snippet to an HTM file only its 
+                <code>&lt;body&gt;</code> content is added.</p>
+            <p class="sample">You can enable snippet auto suggestion so that Flare will suggest a snippet that matches the text you are typing. To enable it, go to 
+                <b>File > Options > Auto Suggestion</b>.</p>
+            <h2 class="sample">Create a Snippet File</h2>
+            <ol>
+                <li>In the Content Explorer, right-click on any folder.</li>
+                <li>Go to <b>New > Snippet</b>.</li>
+                <li>Specify the source of the file (either from template or another existing snippet).</li>
+                <li>Type the snippet file name in the <b>File Name</b> field.</li>
+                <li><i>(Optional)</i> Specify the destination folder in the Folder field.</li>
+            </ol>
+            <p class="or">OR</p>
+            <ol>
+                <li>Select existing content in an HTM file.</li>
+                <li>Go to the <b>Home</b> ribbon.</li>
+                <li>Click the <b>Create Snippet</b> button.</li>
+                <li>Type the snippet file name in the <b>Snippet File</b> field.</li>
+                <li>Select the destination folder in the <b>Project Folder</b> field.</li>
+            </ol>
+            <h2 class="sample">Insert Snippet</h2>
+            <ol>
+                <li>Place the text cursor in the HTM file where you want to place the snippet.</li>
+                <li>Click the <b>Insert a snippet</b> button either in the <b>Insert</b> ribbon or in the XML Editor toolbar.</li>
+                <li>Select the snippet from the project structure.</li>
+            </ol>
+            <h2 class="sample">Additional Actions</h2>
+            <p><b>Select New Snippet</b></p>
+            <ol>
+                <li>Right-click on a snippet in the XML Editor.</li>
+                <li>Choose <b>Select New Snippet</b>.</li>
+                <li>Select a new snippet from the project structure.</li>
+            </ol>
+            <p><b>Convert Snippet to Text</b></p>
+            <ol>
+                <li>Right-click on a snippet in the XML Editor.</li>
+                <li>Select <b>Convert to text</b>.</li>
+            </ol>
+            <p><b>Edit Snippet</b></p>
+            <ol>
+                <li>Right-click on a snippet in the XML Editor.</li>
+                <li>Select <b>Open Snippet File</b>.</li>
+            </ol>
+            <p class="or">OR</p>
+            <ol>
+                <li>In the Content Explorer, navigate to the folder where the snippet file is located.</li>
+                <li>Double-click on the snippet file.</li>
+            </ol>
         </div>
+        <div class="sample-text">
+            <h1 class="sample">CAFFEINE Functionality</h1>
+            <p class="sample">The CAFFEINE feature increases the overall efficiency of your company's employees. It has
+                both short- and long-term properties. CAFFEINE should be introduced to each employee in
+                liquid state called coffee. It has the best impact at the beginning of the work shift. The
+                maximum amount of CAFFEINE per employee varies and is dependent on the current tasks of
+                said employee. As a rule of thumb, the more tasks an employee has, the more CAFFEINE
+                should be introduced.</p>
+            <p class="important"><b>IMPORTANT: </b>Once CAFFEINE has been introduced to your company, remember to keep a
+                one-week supply buffer in storage, as when employees will be cut off from the coffee
+                supply their efficiency will drop dramatically.</p>
+            <h2 class="sample">How to Enable CAFFEINE</h2>
+            <ol>
+                <li>Buy the most expensive espresso machines as Primary (one per 20 employees).</li>
+                <li>Buy at least two more as Backups.</li>
+                <li>Buy non-grounded coffee supply (0.5 kg per employee).</li>
+                <li>Install the espresso machines evenly around the workspace.</li>
+                <li>Stick ~20 flyers around the espresso machine containing different procedures and rules
+                    on how to use the machine.</li>
+                <li>Hire a maintenance crew and station them as close to the espresso machines.</li>
+                <li>Setup a rule in Outlook to automatically forward any e-mail containing words like <code>coffee</code>
+                    or <code>espresso</code> to the maintenance crew for quick response in case of an espresso machine failure.</li>
+            </ol>
+        </div>
+        <!-- <div style="margin: auto">
+            <object id="menu" class="menu" type="text/html" data="./portfolio/menu.html"></object>
+            <object id="snippets" class="sample" type="text/html" data="./portfolio/snippets.html"></object>
+            <object id="caffeine" class="sample" type="text/html" data="./portfolio/caffeine.html"></object>
+        </div> -->
     </body>
-    <script src="./scripts/countdown.js"></script>
+    <script src="./scripts/navigate-samples.js"></script>
 </html>
