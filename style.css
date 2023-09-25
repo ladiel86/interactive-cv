@@ -359,6 +359,30 @@ h2.sample {
     font-size: 20pt;
 }
 
+div#sample-menu {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 2.5%;
+    gap: 20px;
+}
+
+.sample-link {
+    border: #023047 1px solid;
+    border-radius: 10px;
+    background-color: #023047;
+    color: #E3F2F9;
+    z-index: 99;
+    padding: 10px;
+}
+
+.sample-link:hover {
+    cursor: pointer;
+    background-color: #E3F2F9;
+    color: #023047;
+    transition: 0.5s;
+}
+
 .middle {
     transition: .5s ease;
     opacity: 0;

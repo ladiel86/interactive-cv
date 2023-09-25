@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./../style.css">
     </head>
-    <body>
-        <div id="navigation"></div>
-        <div style="margin: auto">
-            <p class="center">MadCap Snippets</p>
+    <body id="experienceContent">
+        <div class="sample-text">
+            <h1 class="sample">Snippets in MadCap Flare</h1>
+            <p class="sample">A snippet (file with .flsnp extension) is a piece of content that can be used repeatedly in multiple HTM files. 
+                Its content can be formatted the same way as any other HTM file and it can contain any type of HTML element (text, images, tables).</p>
+            <p class="sample">By using snippets, you have the possibility to change the content in one place. Each HTM file using this snippet 
+                will have the same content automatically. This makes your documentation easier to update and avoid having outdated information.</p>
+            <p class="note"><b>NOTE: </b>The content of a snippet file is the same as in an HTM file. However, when inserting a snippet to an HTM file only its 
+                <code>&lt;body&gt;</code> content is added.</p>
+            <p class="sample">You can enable snippet auto suggestion so that Flare will suggest a snippet that matches the text you are typing. To enable it, go to 
+                <b>File > Options > Auto Suggestion</b>.</p>
+            <h2 class="sample">Create a Snippet File</h2>
+            <ol>
+                <li>In the Content Explorer, right-click on any folder.</li>
+                <li>Go to <b>New > Snippet</b>.</li>
+                <li>Specify the source of the file (either from template or another existing snippet).</li>
+                <li>Type the snippet file name in the <b>File Name</b> field.</li>
+                <li><i>(Optional)</i> Specify the destination folder in the Folder field.</li>
+            </ol>
+            <p class="or">OR</p>
+            <ol>
+                <li>Select existing content in an HTM file.</li>
+                <li>Go to the <b>Home</b> ribbon.</li>
+                <li>Click the <b>Create Snippet</b> button.</li>
+                <li>Type the snippet file name in the <b>Snippet File</b> field.</li>
+                <li>Select the destination folder in the <b>Project Folder</b> field.</li>
+            </ol>
+            <h2 class="sample">Insert Snippet</h2>
+            <ol>
+                <li>Place the text cursor in the HTM file where you want to place the snippet.</li>
+                <li>Click the <b>Insert a snippet</b> button either in the <b>Insert</b> ribbon or in the XML Editor toolbar.</li>
+                <li>Select the snippet from the project structure.</li>
+            </ol>
+            <h2 class="sample">Additional Actions</h2>
+            <p><b>Select New Snippet</b></p>
+            <ol>
+                <li>Right-click on a snippet in the XML Editor.</li>
+                <li>Choose <b>Select New Snippet</b>.</li>
+                <li>Select a new snippet from the project structure.</li>
+            </ol>
+            <p><b>Convert Snippet to Text</b></p>
+            <ol>
+                <li>Right-click on a snippet in the XML Editor.</li>
+                <li>Select <b>Convert to text</b>.</li>
+            </ol>
+            <p><b>Edit Snippet</b></p>
+            <ol>
+                <li>Right-click on a snippet in the XML Editor.</li>
+                <li>Select <b>Open Snippet File</b>.</li>
+            </ol>
+            <p class="or">OR</p>
+            <ol>
+                <li>In the Content Explorer, navigate to the folder where the snippet file is located.</li>
+                <li>Double-click on the snippet file.</li>
+            </ol>
         </div>
     </body>
 </html>
